@@ -10,9 +10,10 @@
 // 8 4 4 2
 
 Console.Clear();
-Console.WriteLine($"\n Введите размер массива n x m :");
-int n = InNumbers("Введите m: ");
-int m = InNumbers("Введите n: ");
+Console.WriteLine($"Введите размер массива n(столбцы):");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Введите размер массива m(строки):");
+int m = Convert.ToInt32(Console.ReadLine());
 
 
 int[,] array = new int[m, n];
@@ -42,12 +43,6 @@ void ArrayLines(int[,] array)
   }
 }
 
-int InNumbers(string input)
-{
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
-}
 
 void CreateArray(int[,] array)
 {
