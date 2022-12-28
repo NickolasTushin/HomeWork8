@@ -1,8 +1,8 @@
 ﻿// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 
 Console.Clear();
-
-int m = InputNumbers("Введите кол строк и столбцов матриц: ");
+Console.WriteLine("Введите кол строк и столбцов матриц: ");
+int m = Convert.ToInt32(Console.ReadLine());
 int n = m;
 int p = m;
 
@@ -37,13 +37,6 @@ void MultMatrix(int[,] firstMartrix, int[,] secondMartrix, int[,] resultMatrix)
       resultMatrix[i,j] = sum;
     }
   }
-}
-
-int InputNumbers(string input)
-{
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
 }
 
 void CreateArray(int[,] array)
